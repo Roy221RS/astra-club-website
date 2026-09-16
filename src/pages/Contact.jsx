@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useLocation } from 'react-router-dom';
-import { HiMail, HiLocationMarker, HiCalendar, HiExternalLink } from 'react-icons/hi';
+import { HiMail, HiLocationMarker, HiExternalLink } from 'react-icons/hi';
 import { FaInstagram, FaLinkedin, FaWhatsapp, FaXTwitter } from 'react-icons/fa6';
 
 const Contact = () => {
@@ -34,14 +34,9 @@ const Contact = () => {
     },
     {
       icon: <HiLocationMarker className="text-3xl text-accent-orange" />,
-      label: "Event Location",
+      label: "Club Location",
       value: "BMS Institute of Technology and Management, Yelahanka New Town, Bengaluru – 560064, Karnataka",
       link: "https://maps.google.com/?q=BMS+Institute+of+Technology+and+Management"
-    },
-    {
-      icon: <HiCalendar className="text-3xl text-accent-orange" />,
-      label: "Event Date",
-      value: "30 April 2026",
     }
   ];
 
@@ -130,8 +125,8 @@ const Contact = () => {
             </div>
             <div className="divide-y divide-custom-border">
               {[
-                { name: "Arshad Alam  ", phones: ["+91 82355 19094"] },
-                { name: "Prarthana Dilip ", phones: ["+91 97314 37403"] },
+                { name: "Reyyi Shreyas", phones: ["+91 63668 07796"] },
+                { name: "Varnika Kirani Raghavendra", phones: ["+91 99020 99899"] },
               ].map((contact, i) => (
                 <div key={i} className="flex items-center justify-between px-6 py-4 group hover:bg-accent-orange/5 transition-colors">
                   <span className="font-rajdhani text-text-primary uppercase tracking-badge text-sm">{contact.name}</span>
