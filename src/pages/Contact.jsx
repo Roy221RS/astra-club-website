@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useLocation } from 'react-router-dom';
-import { HiMail, HiLocationMarker, HiCalendar, HiExternalLink } from 'react-icons/hi';
+import { HiMail, HiLocationMarker, HiExternalLink } from 'react-icons/hi';
 import { FaInstagram, FaLinkedin, FaWhatsapp, FaXTwitter } from 'react-icons/fa6';
 
 const Contact = () => {
@@ -34,14 +34,9 @@ const Contact = () => {
     },
     {
       icon: <HiLocationMarker className="text-3xl text-accent-orange" />,
-      label: "Event Location",
+      label: "Club Location",
       value: "BMS Institute of Technology and Management, Yelahanka New Town, Bengaluru – 560064, Karnataka",
       link: "https://maps.google.com/?q=BMS+Institute+of+Technology+and+Management"
-    },
-    {
-      icon: <HiCalendar className="text-3xl text-accent-orange" />,
-      label: "Event Date",
-      value: "30 April 2026",
     }
   ];
 

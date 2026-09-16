@@ -48,14 +48,11 @@ const Footer = () => {
             <ul className="space-y-3">
               <li><Link to="/" className="text-text-muted hover:text-accent-orange text-sm transition-colors font-rajdhani uppercase">Home</Link></li>
               <li><Link to="/about" className="text-text-muted hover:text-accent-orange text-sm transition-colors font-rajdhani uppercase">About</Link></li>
-              <li><Link to="/event" className="text-text-muted hover:text-accent-orange text-sm transition-colors font-rajdhani uppercase">Event</Link></li>
-              <li><Link to="/schedule" className="text-text-muted hover:text-accent-orange text-sm transition-colors font-rajdhani uppercase">Schedule</Link></li>
+              <li><Link to="/domains" className="text-text-muted hover:text-accent-orange text-sm transition-colors font-rajdhani uppercase">Domains</Link></li>
+              <li><Link to="/register" className="text-text-muted hover:text-accent-orange text-sm transition-colors font-rajdhani uppercase">Register</Link></li>
             </ul>
             <ul className="space-y-3">
-              <li><Link to="/guests" className="text-text-muted hover:text-accent-orange text-sm transition-colors font-rajdhani uppercase">Chief Guests</Link></li>
-              <li><Link to="/sponsorship" className="text-text-muted hover:text-accent-orange text-sm transition-colors font-rajdhani uppercase">Sponsorship</Link></li>
               <li><Link to="/contact" className="text-text-muted hover:text-accent-orange text-sm transition-colors font-rajdhani uppercase">Contact</Link></li>
-              <li><Link to="/register" className="text-text-muted hover:text-accent-orange text-sm transition-colors font-rajdhani uppercase">Register</Link></li>
             </ul>
           </div>
         </div>
@@ -74,7 +71,7 @@ const Footer = () => {
             <div className="flex items-start space-x-3 group">
               <HiLocationMarker className="text-accent-orange text-xl mt-1 group-hover:scale-110 transition-transform" />
               <div>
-                <span className="block text-xs uppercase tracking-badge text-text-muted mb-1">EVENT LOCATION</span>
+                <span className="block text-xs uppercase tracking-badge text-text-muted mb-1">CLUB LOCATION</span>
                 <p className="text-text-primary text-sm font-inter">
                   BMSIT&M, Yelahanka, Bengaluru – 560064, Karnataka, India
                 </p>

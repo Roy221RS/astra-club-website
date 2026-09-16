@@ -1,8 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { HiArrowRight, HiLocationMarker } from 'react-icons/hi';
-import { Link } from 'react-router-dom';
-import CountdownTimer from '../components/common/CountdownTimer';
+import { HiArrowRight } from 'react-icons/hi';
 import {
   GiRobotLeg,
   GiArtificialIntelligence,
@@ -10,9 +8,7 @@ import {
   GiCctvCamera,
   GiProcessor,
   GiRadarSweep,
-  GiDeliveryDrone,
-  GiMedal,
-  GiCrosshair
+  GiDeliveryDrone
 } from 'react-icons/gi';
 
 const Home = () => {
@@ -45,26 +41,18 @@ const Home = () => {
           variants={itemVariants}
           className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-orbitron font-black text-text-primary tracking-tactical mb-2 leading-none"
         >
-          DEFENCE TECHNOLOGY
+          ARMED SQUAD FOR
         </motion.h1>
 
         <motion.h2
           variants={itemVariants}
           className="text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-orbitron font-black text-accent-orange mb-4 tracking-tighter"
         >
-          EXPO 2026
+          TACTICAL READINESS
         </motion.h2>
 
         <motion.div variants={itemVariants} className="mb-10">
-          <span className="text-2xl md:text-3xl font-orbitron text-accent-amber tracking-widest">30 APR 2026 · BMSIT&M, Bengaluru</span>
-        </motion.div>
-
-        <motion.div variants={itemVariants} className="mb-12 flex flex-col md:flex-row gap-8 md:gap-16 items-center justify-center">
-          <CountdownTimer 
-            targetDate="2026-04-30T09:00:00+05:30" 
-            label="Event Countdown" 
-            expiredMessage="THE EXPO IS LIVE!"
-          />
+          <span className="text-xl md:text-2xl font-orbitron text-accent-amber tracking-widest">Tomorrow's defence, being engineered today</span>
         </motion.div>
 
         <motion.div variants={itemVariants} className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6">
@@ -77,13 +65,12 @@ const Home = () => {
           >
             Register now
           </button>
-          <a
-            href="/brochure.pdf"
-            download="brochure.pdf"
+          <button
+            onClick={() => document.getElementById('domains')?.scrollIntoView({ behavior: 'smooth' })}
             className="px-10 py-4 border border-accent-orange text-accent-orange font-orbitron font-bold tracking-tactical uppercase hover:bg-accent-orange hover:text-bg-base transition-all"
           >
-            Download Brochure
-          </a>
+            Explore Domains
+          </button>
         </motion.div>
       </section>
 
@@ -104,11 +91,11 @@ const Home = () => {
               className="bg-bg-surface border border-accent-orange/30 p-10 relative group overflow-hidden"
             >
               <div className="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition-opacity">
-                <GiMedal className="text-8xl" />
+                <GiRobotLeg className="text-8xl" />
               </div>
               <h3 className="text-2xl font-orbitron font-black text-text-primary mb-4 uppercase italic">Innovator</h3>
               <p className="text-text-muted font-inter mb-8 leading-relaxed">
-                Showcase your tactical prototypes, compete for the ₹50,000+ prize pool, and interact with defence industry experts.
+                Build practical defence technology projects with peers across disciplines and turn technical curiosity into capability.
               </p>
               <button 
                 onClick={() => {
@@ -117,7 +104,7 @@ const Home = () => {
                 }}
                 className="flex items-center space-x-2 text-accent-orange font-orbitron font-bold uppercase tracking-widest group-hover:space-x-4 transition-all"
               >
-                <span>Participant Portal</span>
+                <span>Explore our work</span>
                 <HiArrowRight />
               </button>
             </motion.div>
@@ -128,11 +115,11 @@ const Home = () => {
               className="bg-bg-elevated border border-custom-border p-10 relative group overflow-hidden"
             >
               <div className="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition-opacity">
-                <GiCrosshair className="text-8xl" />
+                <GiDeliveryDrone className="text-8xl" />
               </div>
               <h3 className="text-2xl font-orbitron font-black text-text-primary mb-4 uppercase italic">Observer</h3>
               <p className="text-text-muted font-inter mb-8 leading-relaxed">
-                Explore the expo, attend technical sessions, and witness the future of defence technology first-hand at BMSIT&M.
+                Join a student community developing awareness, skills, and responsible solutions for the defence and strategic technology ecosystem.
               </p>
               <button 
                 onClick={() => {
@@ -141,7 +128,7 @@ const Home = () => {
                 }}
                 className="flex items-center space-x-2 text-text-primary font-orbitron font-bold uppercase tracking-widest group-hover:text-accent-orange group-hover:space-x-4 transition-all"
               >
-                <span>Visitor Access</span>
+                <span>Join ASTRA</span>
                 <HiArrowRight />
               </button>
             </motion.div>

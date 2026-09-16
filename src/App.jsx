@@ -4,19 +4,13 @@ import { AnimatePresence } from 'framer-motion';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import ScrollToTop from './components/common/ScrollToTop';
-import PanelNotification from './components/common/PanelNotification';
 
 // Pages (to be implemented)
 import Home from './pages/Home';
 import About from './pages/About';
 import Event from './pages/Event';
-import Schedule from './pages/Schedule';
-import Guests from './pages/Guests';
 import Register from './pages/Register';
 import Contact from './pages/Contact';
-import Sponsorship from './pages/Sponsorship';
-import Prizes from './pages/Prizes';
-import Results from './pages/Results';
 
 const MainLanding = () => {
   return (
@@ -24,11 +18,6 @@ const MainLanding = () => {
       <Home />
       <About />
       <Event />
-      <Prizes />
-      <Schedule />
-      <Guests />
-      <Sponsorship />
-      <Results />
       <Register />
       <Contact />
     </>
@@ -60,20 +49,15 @@ function App() {
           <Routes>
             <Route path="/" element={<MainLanding />} />
             <Route path="/register" element={<Register />} />
-            <Route path="/results" element={<Results />} />
             {/* Redirect legacy routes to anchor points */}
             <Route path="/about" element={<Navigate to="/#about" replace />} />
             <Route path="/domains" element={<Navigate to="/#domains" replace />} />
-            <Route path="/schedule" element={<Navigate to="/#schedule" replace />} />
-            <Route path="/guests" element={<Navigate to="/#guests" replace />} />
-            <Route path="/sponsors" element={<Navigate to="/#sponsors" replace />} />
             <Route path="/contact" element={<Navigate to="/#contact" replace />} />
           </Routes>
         </AnimatePresence>
       </main>
       <Footer />
       <ScrollToTop />
-      <PanelNotification />
     </div>
   );
 }

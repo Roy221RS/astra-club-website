@@ -18,11 +18,6 @@ const Navbar = () => {
     { name: 'HOME', path: '/#home', id: 'home' },
     { name: 'ABOUT', path: '/#about', id: 'about' },
     { name: 'DOMAINS', path: '/#domains', id: 'domains' },
-    { name: 'PRIZES', path: '/#prizes', id: 'prizes' },
-    { name: 'SCHEDULE', path: '/#schedule', id: 'schedule' },
-    { name: 'GUESTS', path: '/#guests', id: 'guests' },
-    { name: 'SPONSORS', path: '/#sponsors', id: 'sponsors' },
-    { name: 'RESULTS', path: '/#results', id: 'results' },
     { name: 'REGISTER', path: '/#register', id: 'register' },
     { name: 'CONTACT', path: '/#contact', id: 'contact' },
   ];
@@ -122,13 +117,6 @@ const Navbar = () => {
 
         {/* Right: Action Buttons */}
         <div className="flex items-center space-x-3 shrink-0">
-          <a
-            href="/brochure.pdf"
-            download="brochure.pdf"
-            className="px-4 py-2 border border-accent-orange/40 text-accent-orange font-orbitron text-[10px] font-black tracking-widest hover:bg-accent-orange/10 transition-all rounded-full"
-          >
-            BROCHURE
-          </a>
           <button
             onClick={() => handleLinkClick('/#register')}
             className="px-4 py-2 bg-accent-orange text-bg-base font-orbitron text-[10px] font-black tracking-widest hover:scale-105 transition-all rounded-full shadow-[0_0_15px_rgba(255,107,0,0.3)]"
@@ -223,14 +211,6 @@ const Navbar = () => {
                 transition={{ delay: 0.5 }}
                 className="flex flex-col space-y-4 pt-8 w-full"
               >
-                <a
-                  href="/brochure.pdf"
-                  download="brochure.pdf"
-                  onClick={(e) => e.stopPropagation()}
-                  className="w-full py-4 border border-accent-orange/40 text-accent-orange font-orbitron text-sm font-black text-center rounded-full bg-accent-orange/5 hover:bg-accent-orange/10 transition-all uppercase tracking-widest"
-                >
-                  BROCHURE
-                </a>
                 <button
                   onClick={(e) => {
                     e.stopPropagation();
